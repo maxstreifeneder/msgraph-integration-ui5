@@ -2,9 +2,9 @@
 /* eslint-disable sap-no-hardcoded-url */
 
 window.msalconfig = {
-    clientID: "78f9cbee-7f4a-46b6-a066-859ffbe00094",
+    clientID: "59140526-7c63-4d3c-b507-cfe065ef2f99",
     redirectUri: location.origin + '/ui/',
-    graphBaseEndpoint: "https://graph.microsoft.com/beta/",
+    graphBaseEndpoint: "https://graph.microsoft.com/1.0/",
     userInfoSuffix: "me/",
     queryMessagesSuffix: "me/messages?$search=\"$1\"&$top=150",
     graphAPIScopes: ['User.Read', 'Mail.Read']

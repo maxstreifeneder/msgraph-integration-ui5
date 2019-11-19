@@ -1,9 +1,9 @@
 ID: msgraph-demo
 _schema-version: '3.1'
-version: 3.0.0
+version: 3.0.2
 
 modules:
- - name: ui
+ - name: msgraph-ui
    type: html5
    path: ui
    parameters:

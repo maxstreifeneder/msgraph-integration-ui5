@@ -1,31 +1,30 @@
 ID: msgraph-demo
-_schema-version: '3.1'
-version: 3.0.2
+_schema-version: "3.1"
+version: 3.0.3
 
 modules:
- - name: msgraph-ui
-   type: html5
-   path: ui
-   parameters:
-      disk-quota: 256M
-      memory: 256M
-   build-parameters:
-      builder: grunt
-   requires:
-    - name: uaa_msgraphintegration
-    - name: dest_es5
+   - name: msgraph-ui
+     type: html5
+     path: ui
+     parameters:
+        disk-quota: 256M
+        memory: 256M
+     build-parameters:
+        builder: grunt
+     requires:
+        - name: uaa_msgraphintegration
+        - name: dest_es5
 
 resources:
- - name: uaa_msgraphintegration
-   parameters:
-      path: ./xs-security.json
-      service-plan: application
-      service: xsuaa
-   type: org.cloudfoundry.managed-service
+   - name: uaa_msgraphintegration
+     parameters:
+        path: ./xs-security.json
+        service-plan: application
+        service: xsuaa
+     type: org.cloudfoundry.managed-service
 
- - name: dest_es5
-   parameters:
-      service-plan: lite
-      service: destination
-   type: org.cloudfoundry.managed-service
-
+   - name: dest_es5
+     parameters:
+        service-plan: lite
+        service: destination
+     type: org.cloudfoundry.managed-service

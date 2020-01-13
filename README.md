@@ -9,3 +9,4 @@ This application is running on SAP Cloud Platform Cloud Foundry. The UI5 App sho
 4) Register your app in the Azure Portal and adjust the configuration in the `ui/webapp/controller/View1.controller.js` file (lines 9-15). 
 5) Execute `mbt build -p=cf` to build the MTA Archive.
 6) Deploy the MTA Archive of step 5 with cf deploy mta_archives/{mta_archive_name}
+7) Adjust the redirect URL in the Azure application registry with the actual url of the application (ends with `.com/ui/`).
